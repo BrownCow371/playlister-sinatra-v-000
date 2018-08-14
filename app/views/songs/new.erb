@@ -1,6 +1,7 @@
 <h1>New Song Page</h1>
 
 <form action="/songs" method="post">
+<<<<<<< HEAD
   <p>Song Name: <input type="text" id="Name" name="song[name]" value=""> </p>
   <br></br>
   Pick and existing artist:
@@ -26,4 +27,21 @@
   <p>New Genre's Name <input type="text" name="genre[name]" id="Genre Name"></p>
 
   <input type="submit" name="submit" value="Create">
+=======
+  <p>Song Name: <input type="text" id="song_name" name="song[name]" value=""> </p>
+  <br></br>
+  <p>Pick and existing artist:</p>
+  <input list="artist_name" id="artist_name" name="artist_name" />
+  <datalist id="artist_name">
+      <option value="Chocolate">
+      <option value="Coconut">
+      <option value="Mint">
+      <option value="Strawberry">
+      <option value="Vanilla">
+  </datalist>  <br></br>
+  <p>Or create a new artist:</p>
+  <br></br>
+
+  <input type="submit" name="submit" value="submit">
+>>>>>>> 38639dbb230d73784e0f9d377e2aa899ad90516e
 </form>

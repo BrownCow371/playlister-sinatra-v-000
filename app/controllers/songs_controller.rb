@@ -11,6 +11,7 @@ class SongsController < ApplicationController
     erb :'songs/new'
   end
 
+<<<<<<< HEAD
   post '/songs' do
     @song = Song.new(name: params["song"]["name"])
     # I want to not create a new arstist if Artist.find_by(name: params["artist"]["name"]) finds something
@@ -46,6 +47,14 @@ class SongsController < ApplicationController
   #   redirect "owners/#{@owner.id}"
   # end
 
+=======
+  post '/songs/new' do
+    song = Song.new(params["song"])
+
+    redirect '/songs/:slug'
+  end
+
+>>>>>>> 38639dbb230d73784e0f9d377e2aa899ad90516e
   get '/songs/:slug' do
     @song = Song.find_by_slug(params[:slug])
     erb :'songs/show'
